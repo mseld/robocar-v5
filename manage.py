@@ -940,7 +940,7 @@ def add_drivetrain(V, cfg):
                   inputs=['throttle', 'steering'],
                   outputs=['left/throttle', 'right/throttle'])
 
-        if cfg.DRIVE_TRAIN_TYPE == "PWM_STEERING_THROTTLE":
+        if cfg.DRIVE_TRAIN_TYPE == "PWM_STEERING_THROTTLE" or cfg.DRIVE_TRAIN_TYPE == "SERVO_ESC":
             #
             # drivetrain for RC car with servo and ESC.
             # using a PwmPin for steering (servo)

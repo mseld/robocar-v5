@@ -55,7 +55,7 @@ def drive(cfg ):
     if cfg.DONKEY_GYM or cfg.DRIVE_TRAIN_TYPE == "MOCK":
         pass
 
-    elif cfg.DRIVE_TRAIN_TYPE == "PWM_STEERING_THROTTLE":
+    elif cfg.DRIVE_TRAIN_TYPE == "PWM_STEERING_THROTTLE"  or cfg.DRIVE_TRAIN_TYPE == "SERVO_ESC":
         #
         # drivetrain for RC car with servo and ESC.
         # using a PwmPin for steering (servo)
